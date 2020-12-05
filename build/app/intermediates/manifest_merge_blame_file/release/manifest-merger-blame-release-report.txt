@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.pasien"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         io.flutter.app.FlutterApplication is an android.app.Application that
+12         calls FlutterMain.startInitialization(this); in its onCreate method.
+13         In most cases you can leave this as-is, but you if you want to provide
+14         additional functionality it is fine to subclass or reimplement
+15         FlutterApplication and put your custom class here.
+16    -->
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:8:5-66
+17-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:8:22-64
+18
+19    <application
+19-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:9:5-31:19
+20        android:name="io.flutter.app.FlutterApplication"
+20-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:10:9-57
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] C:\Users\agus\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:13:9-43
+23        android:label="loginflutter"
+23-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:11:9-37
+24        android:usesCleartextTraffic="true" >
+24-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:12:9-44
+25        <activity
+25-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:14:9-25:20
+26            android:name="com.example.pasien.MainActivity"
+26-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:15:13-41
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:18:13-163
+28            android:hardwareAccelerated="true"
+28-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:19:13-47
+29            android:launchMode="singleTop"
+29-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:16:13-43
+30            android:theme="@style/LaunchTheme"
+30-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:17:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:20:13-55
+32            <intent-filter>
+32-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:21:13-24:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:22:17-68
+33-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:22:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:23:17-76
+35-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:23:27-74
+36            </intent-filter>
+37        </activity>
+38        <!--
+39             Don't delete the meta-data below.
+40             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+41        -->
+42        <meta-data
+42-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:28:9-30:33
+43            android:name="flutterEmbedding"
+43-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:29:13-44
+44            android:value="2" />
+44-->D:\WORKSPACE\edugi_flutter_login\android\app\src\main\AndroidManifest.xml:30:13-30
+45    </application>
+46
+47</manifest>
