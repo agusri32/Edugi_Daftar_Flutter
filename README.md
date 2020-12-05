@@ -1,6 +1,6 @@
-# edugi_login_flutter
+# pasien
 
-A new Flutter application for Login
+A new Flutter application.
 
 ## Getting Started
 
