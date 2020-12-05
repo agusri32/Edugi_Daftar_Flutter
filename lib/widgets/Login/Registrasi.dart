@@ -27,12 +27,9 @@ class RegistrasiUserState extends State{
     String email = emailController.text;
     String password = passwordController.text;
 
-    var url = 'http://10.0.2.2/flutter_login3/registrasi.php';
-
+    var url = 'http://10.0.2.2/web_login/registrasi.php';
     var data = {'name': name, 'email': email, 'password' : password};
-
     var response = await http.post(url, body: json.encode(data));
-
     var message = jsonDecode(response.body);
 
     if(response.statusCode == 200){

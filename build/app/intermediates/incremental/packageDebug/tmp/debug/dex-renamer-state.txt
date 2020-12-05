@@ -1,4 +1,4 @@
-#Sat Dec 05 11:27:05 ICT 2020
-base.0=D\:\\WORKSPACE\\flutter_login_register3\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Dec 05 13:31:42 ICT 2020
+base.0=D\:\\WORKSPACE\\edugi_flutter_login\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

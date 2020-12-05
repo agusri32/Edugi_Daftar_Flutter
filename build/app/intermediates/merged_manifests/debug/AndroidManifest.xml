@@ -18,7 +18,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Simple Data Pasien"
+        android:label="loginflutter"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.pasien.MainActivity"
