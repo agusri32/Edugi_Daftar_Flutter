@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:pasien/widgets/Login/Registrasi.dart';
-import 'package:pasien/widgets/MySql_DataTabel/DataTabelDemo.dart';
+import 'package:pasien/widgets/DataTabel/ShowData.dart';
 
 class LoginUser extends StatefulWidget{
 LoginUserState createState() => LoginUserState();
@@ -143,15 +143,15 @@ class LoginUserState extends State{
                           children: <Widget>[
                             new Container(
                               child: new Image.asset(
-                                "assets/uty.png",
-                                height: 100.0,
-                                width: 250.0,
+                                "assets/user.png",
+                                height: 150.0,
+                                width: 200.0,
                               ),
                             ),
 
                             Padding(
                                 padding: const EdgeInsets.all(12.0),
-                                child: Text('SIMPLE DATA PASIEN',
+                                child: Text('LOGIN USER',
                                     style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: Colors.white)
                                 )
                             ),

@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ceb502-932f-4716-b650-877accabc233" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b9b836984f13544e1eb9494218f5204a/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/b9b836984f13544e1eb9494218f5204a/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b9b836984f13544e1eb9494218f5204a/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/b9b836984f13544e1eb9494218f5204a/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql/pasien/action.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql/pasien/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql/pasien/registrasi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql/uas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/Login/LoginUser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/Login/LoginUser.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/Login/Registrasi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/Login/Registrasi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/MySql_DataTabel/DataTabelDemo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/DataTabel/ShowData.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/MySql_DataTabel/Pasien.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/DataTabel/Pasien.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/MySql_DataTabel/Services.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/DataTabel/Services.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/MySql_DataTabel/User.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,21 +71,21 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1607149577744" />
-    <state width="1540" height="220" key="GridCell.Tab.0.bottom" timestamp="1607151337936">
+    <state width="1540" height="220" key="GridCell.Tab.0.bottom" timestamp="1607155042956">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1540" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1607151337936" />
-    <state width="1540" height="220" key="GridCell.Tab.0.center" timestamp="1607151337936">
+    <state width="1540" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1607155042956" />
+    <state width="1540" height="220" key="GridCell.Tab.0.center" timestamp="1607155042956">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1540" height="220" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1607151337936" />
-    <state width="1540" height="220" key="GridCell.Tab.0.left" timestamp="1607151337936">
+    <state width="1540" height="220" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1607155042956" />
+    <state width="1540" height="220" key="GridCell.Tab.0.left" timestamp="1607155042956">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1540" height="220" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1607151337936" />
-    <state width="1540" height="220" key="GridCell.Tab.0.right" timestamp="1607151337936">
+    <state width="1540" height="220" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1607155042956" />
+    <state width="1540" height="220" key="GridCell.Tab.0.right" timestamp="1607155042956">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1540" height="220" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1607151337936" />
+    <state width="1540" height="220" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1607155042956" />
   </component>
 </project>

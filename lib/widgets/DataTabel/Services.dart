@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:pasien/widgets/MySql_DataTabel/Pasien.dart';
+import 'package:pasien/widgets/DataTabel/Pasien.dart';
 
 class Services {
-  static const ROOT = 'http://10.0.2.2/flutter_login3/action.php';
+  static const ROOT = 'http://10.0.2.2/web_login/action.php';
   static const String _GET_ACTION = 'GET_ALL';
   static const String _CREATE_TABLE = 'CREATE_TABLE';
   static const String _ADD_PAS_ACTION = 'ADD_PAS';

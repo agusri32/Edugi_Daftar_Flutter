@@ -73,8 +73,8 @@ class RegistrasiUserState extends State{
                     new Container(
                       child: new Image.asset(
                         "assets/user.png",
-                        height: 200.0,
-                        width: 250.0,
+                        height: 150.0,
+                        width: 200.0,
                       ),
                     ),
 

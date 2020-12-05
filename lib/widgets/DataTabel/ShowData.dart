@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:pasien/widgets/Login/LoginUser.dart';
-import 'package:pasien/widgets/MySql_DataTabel/Pasien.dart';
-import 'package:pasien/widgets/MySql_DataTabel/Services.dart';
+import 'package:pasien/widgets/DataTabel/Pasien.dart';
+import 'package:pasien/widgets/DataTabel/Services.dart';
 
 class DataTabelDemo extends StatefulWidget {
   DataTabelDemo() : super();
 
-  final String title = "Pendataan Pasien";
+  final String title = "Pendataan Keluarga";
 
   @override
   DataTabelDemoState createState() => DataTabelDemoState();
@@ -255,7 +255,7 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                     borderSide: BorderSide(color: Colors.blue,
                     width: 2.0)
                   ),
-                  labelText: "Nama/Umur",
+                  labelText: "Nama Lengkap",
                   labelStyle: TextStyle(color: Colors.blueAccent)
                 ),
               ),
@@ -271,7 +271,7 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                     borderSide: BorderSide(color: Colors.blue,
                     width: 2.0)
                   ),
-                  labelText: "Status (ODP/PDP)",
+                  labelText: "Status Keluarga",
                   labelStyle: TextStyle(color: Colors.blueAccent)
                 ),
               ),
@@ -286,7 +286,7 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                     borderRadius: BorderRadius.circular(18.0),
                   ),
                   textColor: Colors.white,
-                  child: Text("LogOut"),
+                  child: Text("Log Out"),
                   onPressed: (){
                     Navigator.push(
                         context,
@@ -300,11 +300,11 @@ class DataTabelDemoState extends State<DataTabelDemo> {
               margin: const EdgeInsets.only(top: 30.0, bottom: 20.0),
               child: Center(
                 child: Text(
-                  'DATA PASIEN',
+                  'DATA KELUARGA',
                   style: new TextStyle(
-                    decoration: TextDecoration.underline,
+                    //decoration: TextDecoration.underline,
                     decorationStyle: TextDecorationStyle.double,
-                    fontSize: 40.0,
+                    fontSize: 30.0,
                     color: Colors.deepPurpleAccent
                   ),
                 ),
