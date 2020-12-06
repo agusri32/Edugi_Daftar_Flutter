@@ -116,7 +116,7 @@ class LoginUserState extends State{
       onWillPop: _onBackPressed,
       child: Scaffold(
           body: Container(decoration: new BoxDecoration(
-            gradient: new LinearGradient(colors: [const Color(0xFF915FB5),const Color(0xFFCA436B)],
+            gradient: new LinearGradient(colors: [const Color(0xFF915FB5),const Color(0xFF915FB5)],
                 begin: FractionalOffset.topLeft,
                 end: FractionalOffset.bottomRight,
                 stops: [0.0,1.0],
@@ -143,7 +143,7 @@ class LoginUserState extends State{
                           children: <Widget>[
                             new Container(
                               child: new Image.asset(
-                                "assets/user.png",
+                                "assets/login.png",
                                 height: 150.0,
                                 width: 200.0,
                               ),
@@ -231,7 +231,7 @@ class LoginUserState extends State{
                                       },
                                       child: new Padding(padding: new EdgeInsets.all(10.0),
                                         child: new Text('Daftar Disini',
-                                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue)),
+                                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white)),
                                     ),
                                 ),
                                 ),

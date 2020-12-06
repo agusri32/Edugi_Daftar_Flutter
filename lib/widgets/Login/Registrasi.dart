@@ -68,11 +68,11 @@ class RegistrasiUserState extends State{
                     Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Text('REGISTRASI',
-                            style: TextStyle(fontSize: 31, fontWeight: FontWeight.bold, color: Colors.deepPurpleAccent)
+                            style: TextStyle(fontSize: 31, fontWeight: FontWeight.bold, color: Colors.grey)
                         )),
                     new Container(
                       child: new Image.asset(
-                        "assets/user.png",
+                        "assets/daftar.png",
                         height: 150.0,
                         width: 200.0,
                       ),
