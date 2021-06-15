@@ -32,7 +32,7 @@ class LoginUserState extends State{
     String email = emailController.text;
     String password = passwordController.text;
 
-    var url = 'http://10.0.2.2/web_login/login.php';
+    var url = 'https://restapi32.000webhostapp.com/web_daftar/login.php';
     var data = {'email': email, 'password' : password};
     var response = await http.post(url, body: json.encode(data));
     var message = jsonDecode(response.body);
