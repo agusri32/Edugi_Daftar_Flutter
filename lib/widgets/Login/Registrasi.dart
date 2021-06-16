@@ -5,22 +5,20 @@ import 'dart:convert';
 
 import 'package:pasien/widgets/Login/LoginUser.dart';
 
-class RegistrasiUser extends StatefulWidget{
+class RegistrasiUser extends StatefulWidget {
   RegistrasiUserState createState() => RegistrasiUserState();
 }
 
-class RegistrasiUserState extends State{
-
+class RegistrasiUserState extends State {
   bool visible = false;
 
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
-  Future userRegistration() async{
-
+  Future userRegistration() async {
     setState(() {
-      visible = true ;
+      visible = true;
     });
 
     String name = nameController.text;
@@ -28,11 +26,11 @@ class RegistrasiUserState extends State{
     String password = passwordController.text;
 
     var url = 'https://restapi32.000webhostapp.com/web_daftar/registrasi.php';
-    var data = {'name': name, 'email': email, 'password' : password};
+    var data = {'name': name, 'email': email, 'password': password};
     var response = await http.post(url, body: json.encode(data));
     var message = jsonDecode(response.body);
 
-    if(response.statusCode == 200){
+    if (response.statusCode == 200) {
       setState(() {
         visible = false;
       });
@@ -54,112 +52,102 @@ class RegistrasiUserState extends State{
         );
       },
     );
-
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-          child: SingleChildScrollView(
-              child: Center(
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Text('REGISTRASI',
-                            style: TextStyle(fontSize: 31, fontWeight: FontWeight.bold, color: Colors.grey)
-                        )),
-                    new Container(
-                      child: new Image.asset(
-                        "assets/daftar.png",
-                        height: 150.0,
-                        width: 200.0,
-                      ),
-                    ),
-
-                    Container(
-                        width: 280,
-                        padding: EdgeInsets.all(10.0),
-                        child: TextField(
-                          controller: nameController,
-                          autocorrect: true,
-                          decoration: InputDecoration(
-                              border: new OutlineInputBorder(
-                                borderRadius: const BorderRadius.all(const Radius.circular(12))
-                              ),
-                              icon: Icon(Icons.perm_identity),
-                              hintText: 'Masukan Nama'),
-                        ),
-                    ),
-
-                    Container(
-                        width: 280,
-                        padding: EdgeInsets.all(10.0),
-                        child: TextField(
-                          controller: emailController,
-                          autocorrect: true,
-                          decoration: InputDecoration(
-                              border: new OutlineInputBorder(
-                                  borderRadius: const BorderRadius.all(const Radius.circular(12))
-                              ), icon: Icon(Icons.mail),
-                              hintText: 'Masukan Email'),
-                        )
-                    ),
-
-                    Container(
-                        width: 280,
-                        padding: EdgeInsets.all(10.0),
-                        child: TextField(
-                          controller: passwordController,
-                          autocorrect: true,
-                          obscureText: true,
-                          decoration: InputDecoration(
-                              border: new OutlineInputBorder(
-                                  borderRadius: const BorderRadius.all(const Radius.circular(12))
-                              ), icon: Icon(Icons.vpn_key),
-                              hintText: 'Masukan Password'),
-                        )
-                    ),
-
-                    FlatButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)
-                      ),
-                      onPressed: userRegistration,
-                      color: Colors.deepPurpleAccent,
-                      textColor: Colors.white,
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text('Daftar'),
-                    ),
-                    FlatButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.purpleAccent,
-                      textColor: Colors.white,
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text('Cancel'),
-                      onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => LoginUser())
-                        );
-                      },
-                    ),
-
-                    Visibility(
-                        visible: visible,
-                        child: Container(
-                            margin: EdgeInsets.only(bottom: 30),
-                            child: CircularProgressIndicator()
-                        )
-                    ),
-
-                  ],
-                ),
-              )),
-        ));
+      child: SingleChildScrollView(
+          child: Center(
+        child: Column(
+          children: <Widget>[
+            /*
+            Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Text('REGISTRASI',
+                    style: TextStyle(
+                        fontSize: 31,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey))),
+            */
+            new Container(
+              child: new Image.asset(
+                "assets/daftar.png",
+                height: 200.0,
+                width: 250.0,
+              ),
+            ),
+            Container(
+              width: 280,
+              padding: EdgeInsets.all(10.0),
+              child: TextField(
+                controller: nameController,
+                autocorrect: true,
+                decoration: InputDecoration(
+                    border: new OutlineInputBorder(
+                        borderRadius:
+                            const BorderRadius.all(const Radius.circular(12))),
+                    icon: Icon(Icons.perm_identity),
+                    hintText: 'Masukan Nama'),
+              ),
+            ),
+            Container(
+                width: 280,
+                padding: EdgeInsets.all(10.0),
+                child: TextField(
+                  controller: emailController,
+                  autocorrect: true,
+                  decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                          borderRadius: const BorderRadius.all(
+                              const Radius.circular(12))),
+                      icon: Icon(Icons.mail),
+                      hintText: 'Masukan Email'),
+                )),
+            Container(
+                width: 280,
+                padding: EdgeInsets.all(10.0),
+                child: TextField(
+                  controller: passwordController,
+                  autocorrect: true,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                          borderRadius: const BorderRadius.all(
+                              const Radius.circular(12))),
+                      icon: Icon(Icons.vpn_key),
+                      hintText: 'Masukan Password'),
+                )),
+            FlatButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0)),
+              onPressed: userRegistration,
+              color: Colors.deepPurpleAccent,
+              textColor: Colors.white,
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: Text('Daftar'),
+            ),
+            FlatButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0)),
+              color: Colors.purpleAccent,
+              textColor: Colors.white,
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: Text('Kembali'),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginUser()));
+              },
+            ),
+            Visibility(
+                visible: visible,
+                child: Container(
+                    margin: EdgeInsets.only(bottom: 30),
+                    child: CircularProgressIndicator())),
+          ],
+        ),
+      )),
+    ));
   }
-
 }
