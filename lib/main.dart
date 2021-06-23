@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pasien/widgets/DataTabel/ShowData.dart';
 import 'package:pasien/widgets/Login/LoginUser.dart';
 
 void main() => runApp(MyApp());
@@ -12,10 +11,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.brown,
         brightness: Brightness.light,
       ),
-     darkTheme: ThemeData(
-       brightness: Brightness.dark,
-     ),
-     debugShowCheckedModeBanner: false,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      debugShowCheckedModeBanner: false,
       home: LoginUser(),
     );
   }

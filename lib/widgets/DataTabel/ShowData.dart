@@ -80,8 +80,9 @@ class DataTabelDemoState extends State<DataTabelDemo> {
     _showProgress('Hapus Data...');
     Services.deletePasien(pasien.id).then((result) {
       if ('success' == result) {
-        AlertDialog alert = AlertDialog(
-            content: Text("Data Berhasil Dihapus"),);
+        AlertDialog(
+          content: Text("Data Berhasil Dihapus"),
+        );
         setState(() {
           _pasiens.remove(pasien);
         });
@@ -93,7 +94,7 @@ class DataTabelDemoState extends State<DataTabelDemo> {
   _updatePasien(Pasien pasien) {
     _showProgress('Perbarui Data...');
     Services.updatePasien(
-        pasien.id, _identitasController.text, _statusController.text)
+            pasien.id, _identitasController.text, _statusController.text)
         .then((result) {
       if ('success' == result) {
         _getPasiens();
@@ -121,10 +122,7 @@ class DataTabelDemoState extends State<DataTabelDemo> {
 
   BoxDecoration myBoxDecoration() {
     return BoxDecoration(
-        border: Border.all(
-            color: Colors.grey,
-            width: 1.0
-        ),
+      border: Border.all(color: Colors.grey, width: 1.0),
     );
   }
 
@@ -153,56 +151,54 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                   numeric: false,
                   tooltip: "Ini Kolom Status"),
               DataColumn(
-                  label: Text("DELETE"),
-                  numeric: false,
-                  tooltip: "Delete"),
+                  label: Text("DELETE"), numeric: false, tooltip: "Delete"),
             ],
             rows: _pasiens
                 .map(
                   (pasien) => DataRow(
-                cells: [
-                  DataCell(
-                    Text(pasien.id),
-                    onTap: () {
-                      print("Tapped " + pasien.identitas);
-                      _setValues(pasien);
-                      _selectedPasien = pasien;
-                    },
+                    cells: [
+                      DataCell(
+                        Text(pasien.id),
+                        onTap: () {
+                          print("Tapped " + pasien.identitas);
+                          _setValues(pasien);
+                          _selectedPasien = pasien;
+                        },
+                      ),
+                      DataCell(
+                        Text(
+                          pasien.identitas.toUpperCase(),
+                        ),
+                        onTap: () {
+                          print("Tapped " + pasien.identitas);
+                          _setValues(pasien);
+                          _selectedPasien = pasien;
+                        },
+                      ),
+                      DataCell(
+                        Text(
+                          pasien.status.toUpperCase(),
+                        ),
+                        onTap: () {
+                          print("Tapped " + pasien.identitas);
+                          _setValues(pasien);
+                          _selectedPasien = pasien;
+                        },
+                      ),
+                      DataCell(
+                        IconButton(
+                          icon: Icon(Icons.delete),
+                          onPressed: () {
+                            _deletePasien(pasien);
+                          },
+                        ),
+                        onTap: () {
+                          print("Tapped " + pasien.identitas);
+                        },
+                      ),
+                    ],
                   ),
-                  DataCell(
-                    Text(
-                      pasien.identitas.toUpperCase(),
-                    ),
-                    onTap: () {
-                      print("Tapped " + pasien.identitas);
-                      _setValues(pasien);
-                      _selectedPasien = pasien;
-                    },
-                  ),
-                  DataCell(
-                    Text(
-                      pasien.status.toUpperCase(),
-                    ),
-                    onTap: () {
-                      print("Tapped " + pasien.identitas);
-                      _setValues(pasien);
-                      _selectedPasien = pasien;
-                    },
-                  ),
-                  DataCell(
-                    IconButton(
-                      icon: Icon(Icons.delete),
-                      onPressed: () {
-                        _deletePasien(pasien);
-                      },
-                    ),
-                    onTap: () {
-                      print("Tapped " + pasien.identitas);
-                    },
-                  ),
-                ],
-              ),
-            )
+                )
                 .toList(),
           ),
         ),
@@ -215,7 +211,6 @@ class DataTabelDemoState extends State<DataTabelDemo> {
       content: Text(message),
     ));
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -251,13 +246,10 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                 controller: _identitasController,
                 style: TextStyle(color: Colors.blueAccent),
                 decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.blue,
-                    width: 2.0)
-                  ),
-                  labelText: "Nama Lengkap",
-                  labelStyle: TextStyle(color: Colors.blueAccent)
-                ),
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.blue, width: 2.0)),
+                    labelText: "Nama Lengkap",
+                    labelStyle: TextStyle(color: Colors.blueAccent)),
               ),
             ),
             Container(
@@ -267,13 +259,10 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                 style: TextStyle(color: Colors.blueAccent),
                 controller: _statusController,
                 decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.blue,
-                    width: 2.0)
-                  ),
-                  labelText: "Status Keluarga",
-                  labelStyle: TextStyle(color: Colors.blueAccent)
-                ),
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.blue, width: 2.0)),
+                    labelText: "Status Keluarga",
+                    labelStyle: TextStyle(color: Colors.blueAccent)),
               ),
             ),
             Container(
@@ -287,11 +276,9 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                   ),
                   textColor: Colors.white,
                   child: Text("Log Out"),
-                  onPressed: (){
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => LoginUser())
-                    );
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginUser()));
                   },
                 ),
               ),
@@ -302,52 +289,49 @@ class DataTabelDemoState extends State<DataTabelDemo> {
                 child: Text(
                   'DATA KELUARGA',
                   style: new TextStyle(
-                    //decoration: TextDecoration.underline,
-                    decorationStyle: TextDecorationStyle.double,
-                    fontSize: 30.0,
-                    color: Colors.deepPurpleAccent
-                  ),
+                      //decoration: TextDecoration.underline,
+                      decorationStyle: TextDecorationStyle.double,
+                      fontSize: 30.0,
+                      color: Colors.deepPurpleAccent),
                 ),
               ),
             ),
             _isUpdating
                 ? Row(
-              children: <Widget>[
-                Container(
-                  padding: const EdgeInsets.all(15.0),
-                  child: FlatButton(
-                    padding: EdgeInsets.all(8.0),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)
-                    ),
-                    color: Colors.blueAccent,
-                    textColor: Colors.white,
-                    child: Text('UPDATE'),
-                    onPressed: () {
-                      _updatePasien(_selectedPasien);
-                    },
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all((15.0)),
-                  child: FlatButton(
-                    color: Colors.lightBlueAccent,
-                    textColor: Colors.white,
-                    padding: EdgeInsets.all(8.0),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)
-                    ),
-                    child: Text('CANCEL'),
-                    onPressed: () {
-                      setState(() {
-                        _isUpdating = false;
-                      });
-                      _clearValues();
-                    },
-                  ),
-                ),
-              ],
-            )
+                    children: <Widget>[
+                      Container(
+                        padding: const EdgeInsets.all(15.0),
+                        child: FlatButton(
+                          padding: EdgeInsets.all(8.0),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0)),
+                          color: Colors.blueAccent,
+                          textColor: Colors.white,
+                          child: Text('UPDATE'),
+                          onPressed: () {
+                            _updatePasien(_selectedPasien);
+                          },
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all((15.0)),
+                        child: FlatButton(
+                          color: Colors.lightBlueAccent,
+                          textColor: Colors.white,
+                          padding: EdgeInsets.all(8.0),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0)),
+                          child: Text('CANCEL'),
+                          onPressed: () {
+                            setState(() {
+                              _isUpdating = false;
+                            });
+                            _clearValues();
+                          },
+                        ),
+                      ),
+                    ],
+                  )
                 : Container(),
             Expanded(
               child: _dataBody(),
